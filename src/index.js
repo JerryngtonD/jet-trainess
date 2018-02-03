@@ -841,7 +841,7 @@ function renderElems(pageNumber) {
     };
 
     htmlFragment = tmpl(rowData);
-    var indexNode = document.querySelector('.data-table');
+    let indexNode = document.querySelector('.data-table');
     indexNode.innerHTML += htmlFragment;
   }
   sortUpNameListener();
@@ -884,7 +884,7 @@ function renderElemsByObj(obj) {
     };
 
     htmlFragment = tmpl(rowData);
-    var indexNode = document.querySelector('.data-table');
+    let indexNode = document.querySelector('.data-table');
     indexNode.innerHTML += htmlFragment;
   }
   sortUpNameListener();

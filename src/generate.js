@@ -1,4 +1,4 @@
-var casual = require('casual');
+let casual = require('casual');
 
 casual.define('user', function() {
   return {
@@ -12,7 +12,6 @@ casual.define('user', function() {
 });
 
 // Generate object with randomly generated fields
-let user = casual.user;
 let users = [];
 let paginations = {};
 let jobs = [
@@ -48,7 +47,5 @@ for (let propt in fileContent) {
     fileContent[propt][ex]['position'] =
       jobs[Math.floor(Math.random() * jobs.length)];
 }
-
-console.log(fileContent);
 
 fs.writeFileSync('./data.json', JSON.stringify(fileContent, null, 4), 'utf-8');
