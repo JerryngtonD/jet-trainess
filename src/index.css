@@ -64,8 +64,17 @@ th {
   margin-bottom: 5px;
 }
 
+.arrow-up:hover,
+.arrow-down:hover {
+  background-color: red;
+}
+
 .column-name {
   margin-right: 10px;
+}
+
+.column-name:hover {
+  color: blue;
 }
 
 .column-title-area {
