@@ -8,8 +8,79 @@
 </head>
 
 <body>
-  <h1>Hello World</h1>
-  <script src="./index.js"></script>
+<div class="wrap">
+  <div class="search wrap__search">
+    <label class="search__label" for="search_id">Seacrh</label>
+    <input class="search__input" id="search_id">
+    <button class="button search__button search__button--active">search</button>
+  </div>
+  <table class="data-table">
+    <tr>
+      <th class="column-title-area">
+        <span class="column-name column-name--text">Name</span>
+        <div class="arrows">
+          <div class="arrow-up up-sort-by-name"></div>
+          <div class="arrow-down down-sort-by-name"></div>
+        </div>
+      </th>
+      <th class="column-title-area">
+        <span class="column-name column-name--text">Position</span>
+        <div class="arrows">
+          <div class="arrow-up up-sort-by-job"></div>
+          <div class="arrow-down down-sort-by-job"></div>
+        </div>
+      </th>
+      <th class="column-title-area">
+        <span class="column-name column-name--text">Office</span>
+        <div class="arrows">
+          <div class="arrow-up up-sort-by-city"></div>
+          <div class="arrow-down down-sort-by-city"></div>
+        </div>
+      </th>
+      <th class="column-title-area">
+        <span class="column-name column-name--age">Age</span>
+        <div class="arrows">
+          <div class="arrow-up up-sort-by-age"></div>
+          <div class="arrow-down down-sort-by-age"></div>
+        </div>
+      </th>
+      <th class="column-title-area">
+        <span class="column-name column-name--date">Start date</span>
+        <div class="arrows">
+          <div class="arrow-up up-sort-by-date"></div>
+          <div class="arrow-down down-sort-by-date"></div>
+        </div>
+      </th>
+      <th class="column-title-area">
+        <span class="column-name column-name--salary">Salary</span>
+        <div class="arrows">
+          <div class="arrow-up up-sort-by-salary"></div>
+          <div class="arrow-down down-sort-by-salary"></div>
+        </div>
+      </th>
+    </tr>
+  </table>
+  <nav class="pagination wrap__pagination">
+    <button class="pagination__button active">1</button>
+    <button class="pagination__button">2</button>
+    <button class="pagination__button">3</button>
+    <button class="pagination__button">4</button>
+    <button class="pagination__button">5</button>
+    <button class="pagination__button">6</button>
+  </nav>
+</div>
+<script id="entry-template" type="text/template">
+  <tr>
+    <td><%= name %></td>
+    <td><%= position %></td>
+    <td><%= office %></td>
+    <td><%= age %></td>
+    <td><%= start_date %></td>
+    <td><%= salary %></td>
+  </tr>
+</script>
 </body>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js"></script>
+<script src="./index.js"></script>
 </html>
+

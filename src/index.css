@@ -7,3 +7,84 @@ html {
 *::before {
   box-sizing: inherit;
 }
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search {
+  margin-bottom: 30px;
+  align-self: flex-end;
+}
+
+.wrap__search {
+  margin-right: 335px;
+}
+
+
+.wrap__pagination {
+  margin-right: 335px;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid black;
+}
+
+td {
+  padding: 5px;
+  padding-right: 30px;
+  border: 1px solid lightgray;
+}
+
+th {
+  /* стили для ячеек-заголовков */
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+
+  border-top: 5px solid black;
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+
+  border-bottom: 5px solid black;
+  margin-bottom: 5px;
+}
+
+.column-name {
+  margin-right: 10px;
+}
+
+.column-title-area {
+  position: relative;
+}
+
+.arrows {
+  position: absolute;
+  right: 5px;
+  top: 12px;
+}
+
+.pagination {
+  align-self: flex-end;
+  margin-top: 30px;
+}
+
+.active {
+  background: cadetblue;
+  padding: 5px;
+}
+
