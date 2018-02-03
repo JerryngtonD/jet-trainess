@@ -872,6 +872,7 @@ function deleteElemsOnPage() {
 }
 
 function renderElemsByObj(obj) {
+  _currentElemsOnPage = obj;
   for (let i = 0; i < obj.length; i++) {
     let rowData = {
       name: obj[i]['name'],
@@ -1212,6 +1213,7 @@ function searchByValue() {
       }
     }
     deleteElemsOnPage();
+    _currentElemsOnPage = resultList;
     renderElemsByObj(resultList);
   });
 }
