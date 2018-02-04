@@ -26,7 +26,7 @@ let jobs = [
   'Marketing Designer',
 ];
 
-function get_list() {
+function getList() {
   for (let i = 0; i < 10; i++) {
     users.push(casual.user);
   }
@@ -34,7 +34,7 @@ function get_list() {
 }
 
 for (let j = 0; j < 10; j++) {
-  paginations['page' + `${j}`] = get_list();
+  paginations['page' + `${j}`] = getList();
   users = [];
 }
 
