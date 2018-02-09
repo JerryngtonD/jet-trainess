@@ -3,7 +3,7 @@ let data = getPersonals();
 let elem = document.querySelector('#entry-template');
 let htmlFragment = '';
 let tmpl = _.template(elem.innerHTML);
-var _currentElemsOnPage;
+let _currentElemsOnPage;
 let _currentPageNumber = parseInt(document.querySelector('.active').textContent, 10);
 
 let orderTypeEnum = Object.freeze({
