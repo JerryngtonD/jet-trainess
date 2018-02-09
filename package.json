@@ -61,6 +61,7 @@
     "stylelint": "^8.4.0"
   },
   "dependencies": {
+    "data.js": "^0.10.6",
     "handlebars": "^4.0.11"
   }
 }
