@@ -1,4 +1,4 @@
-function getPersonals() {
+export default function getPersonals() {
   return {
     page0: [
       {

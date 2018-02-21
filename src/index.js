@@ -1,4 +1,6 @@
 'use strict';
+import getPersonals from './data';
+
 let data = getPersonals();
 let elem = document.querySelector('#entry-template');
 let htmlFragment = '';
